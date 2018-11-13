@@ -47,6 +47,22 @@ namespace MPACore.PhoneBook.Web.Startup
                 )
                 .AddItem(
                     new MenuItemDefinition(
+                        PageNames.Phone,
+                        new FixedLocalizableString("通讯录"),
+                        url: "PhoneBook",
+                        icon: "phone"
+                    )
+                )
+                .AddItem(
+                    new MenuItemDefinition(
+                        PageNames.Phone,
+                        L("PhoneBook"),
+                        url: "PhoneBook",
+                        icon: "phone"
+                    )
+                )
+                .AddItem(
+                    new MenuItemDefinition(
                         PageNames.About,
                         L("About"),
                         url: "About",
